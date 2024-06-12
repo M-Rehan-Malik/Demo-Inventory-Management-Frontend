@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Style+Script&display=swap");
+:root {
+  --primary-color: #000000;
+  --title-color: #b50a65;
+  --elements-bg-color: #f8f6f6;
+  --body-bg-color: #eee;
+
+  --font-family: "Roboto", sans-serif;
+  --font-family-stylish: "Style Script", cursive;
+
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-bold: 700;
+}
+* {
+  font-family: var(--font-family);
+}
+h1,
+h2 {
+  font-weight: var(--fw-bold);
+}
+h3,
+h4,
+h5,
+label,
+button {
+  font-weight: var(--fw-medium);
+}
+p {
+  font-weight: var(--fw-regular);
+}
+input::placeholder {
+  color: var(--secondary-color);
+  font-weight: var(--fw-light);
+}
+
+body {
+  background-color: var(--body-bg-color);
+}
+#title {
+  color: var(--title-color);
+}
+nav {
+  background-color: var(--elements-bg-color);
+}
+nav ul li a {
+  color: var(--primary-color);
+  font-weight: var(--fw-medium);
+}
+nav ul li a.active {
+  color: var(--title-color);
+}
+nav #logOutBtn {
+  background-color: transparent;
+  border: 1px solid var(--title-color);
+  color: var(--title-color);
+}
+
+.bgGray {
+  background-color: rgba(0, 0, 0, 0.45);
+  color: var(--elements-bg-color);
+}
+.bgGray h1 {
+  font-family: var(--font-family-stylish);
+}
+
+#carousel .carouselImgDiv .btnDiv {
+  background-color: var(--title-color);
+  color: var(--elements-bg-color);
+}
+#carousel h3.learnMore a {
+  color: var(--primary-color);
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: var(--elements-bg-color);
+}
+
+.about-text span {
+  color: var(--title-color);
+  font-weight: var(--fw-bold);
+}
+
+#loginSection {
+  background-color: var(--elements-bg-color);
+}
+#loginSection span.colorPink {
+  color: var(--title-color);
+}
+input {
+  border: 2px solid #ccc !important;
+}
+input::placeholder {
+  color: #333 !important;
+}
+input:active,
+input:focus {
+  border: 2px solid var(--title-color) !important;
+}
+#loginBtn {
+  color: var(--title-color);
+  border: 1px solid var(--title-color);
+}
+#loginBtn:hover,
+#loginBtn:active {
+  color: white;
+  background-color: var(--title-color);
+}
+#loginBtn:disabled {
+  color: var(--title-color);
+}
+
+.errorMessage {
+  color: red;
+}
+
+.sidebarNav {
+  background-color: var(--elements-bg-color);
+}
+.sidebarNav ul li a {
+  color: rgba(0, 0, 0, 0.75);
+}
+.sidebarNav ul li a.active {
+  color: var(--primary-color);
+  background-color: rgba(0, 0, 0, 0.25);
+  font-weight: var(--fw-medium);
+}
+.sidebarNav ul li a:hover {
+  font-weight: var(--fw-medium);
+  text-decoration: underline;
+}
+
+.card p,
+.card span {
+  color: var(--elements-bg-color);
+  font-weight: var(--fw-bold);
+  font-size: 24px;
+}
+.productsCard {
+  background-color: lightcoral;
+}
+.stockCard {
+  background-color: green;
+}
+.suppliesCard {
+  background-color: orange;
+}
+.salesCard {
+  background-color: blueviolet;
+}
+.salesReportCard{
+  background-color: navy;
+}
+.monthlyReportCard{
+  background-color: burlywood;
+}
+
+#addProductBtn,
+#addSaleBtn,
+.addBtn,
+#addSupplyBtn,
+#getStockReportBtn,
+#getSalesReportBtn {
+  background-color: var(--title-color);
+  color: var(--elements-bg-color);
+}
+.length {
+  color: var(--title-color);
+}
+
+.successMessage {
+  margin-top: 30px;
+  color: green;
+  text-align: center;
+}
+
+#productDetailsSection .btnsDiv #editProductBtn,
+#supplyDetailsSection .btnsDiv #editSupplyBtn,
+#saleDetailsSection .btnsDiv #editSaleBtn {
+  background-color: transparent;
+  color: blue;
+  border: 1px solid blue;
+}
+#productDetailsSection .btnsDiv #editProductBtn:hover,
+#supplyDetailsSection .btnsDiv #editSupplyBtn:hover,
+#saleDetailsSection .btnsDiv #editSaleBtn:hover {
+  background-color: blue;
+  color: white;
+  border: none;
+}
+#productDetailsSection .btnsDiv #deleteProductBtn,
+#supplyDetailsSection .btnsDiv #deleteSupplyBtn,
+#saleDetailsSection .btnsDiv #deleteSaleBtn {
+  background-color: transparent;
+  color: red;
+  border: 1px solid red;
+}
+#productDetailsSection .btnsDiv #deleteProductBtn:hover,
+#supplyDetailsSection .btnsDiv #deleteSupplyBtn:hover,
+#saleDetailsSection .btnsDiv #deleteSaleBtn:hover {
+  background-color: red;
+  color: white;
+  border: none;
+}
+
+#cancelBtn {
+  background-color: transparent;
+  color: grey;
+  border: 1px solid grey;
+}
+#cancelBtn:hover {
+  background-color: grey;
+  color: white;
+}
+#saveChangesBtn {
+  background-color: transparent;
+  color: darkcyan;
+  border: 1px solid darkcyan;
+}
+#saveChangesBtn:hover {
+  background-color: darkcyan;
+  color: white;
+}
+
+#saleDetailsSection #generateBillBtn {
+  background-color: transparent;
+  color: green;
+  border: 1px solid green;
+}
+#saleDetailsSection #generateBillBtn:hover {
+  background-color: green;
+  color: white;
+}

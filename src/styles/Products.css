@@ -1,0 +1,33 @@
+#productsSection{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h2, .errorMessage{
+    text-align: center;
+    margin: 20px 0px ;
+}
+#addProductBtn{
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+#addProductBtn:hover{
+    opacity: .8;
+    transform: scale(1.02);
+}
+.searchProductInput{
+    width: 80%;
+    padding: 10px 15px;
+    margin: 20px auto 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}

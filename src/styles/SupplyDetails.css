@@ -1,0 +1,58 @@
+#supplyDetailsSection {
+  width: 100%;
+  padding: 6vh 3vw;
+}
+
+#supplyDetailsSection form, #supplyDetailsSection .product-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+#supplyDetailsSection .product-group{
+    margin-top: 20px;
+    width: 100%;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#supplyDetailsSection .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#supplyDetailsSection .form-group input {
+  padding: 15px 20px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+#supplyDetailsSection .form-group.name, #supplyDetailsSection .form-group.description {
+  width: 100%;
+}
+#supplyDetailsSection .form-group.quantityCtn, #supplyDetailsSection .form-group.quantityPcs, #supplyDetailsSection .form-group.date{
+    width: 45%;
+}
+
+#supplyDetailsSection .btnsDiv {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 30px;
+}
+#supplyDetailsSection .btnsDiv button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+}
+
+

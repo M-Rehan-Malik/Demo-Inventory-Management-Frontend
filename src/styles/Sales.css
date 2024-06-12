@@ -1,0 +1,25 @@
+#salesSection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#salesSection h2 {
+  text-align: center;
+  margin: 20px 0px;
+}
+a #addSaleBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 40px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+a #addSaleBtn:hover {
+  opacity: 0.8;
+  transform: scale(1.02);
+}

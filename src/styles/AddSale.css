@@ -1,0 +1,69 @@
+#addSaleSection {
+  width: 100%;
+  padding: 6vh 3vw;
+}
+#addSaleSection .product-group{
+  position: relative;
+}
+#addSaleSection #removeProduct{
+  position: absolute;
+  right: 5%;
+  cursor: pointer;
+}
+
+#addSaleSection form,
+#addSaleSection .product-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+#addSaleSection .product-group {
+  margin-top: 20px;
+  width: 100%;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+#addSaleSection .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#addSaleSection .form-group input {
+  padding: 15px 20px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+#addSaleSection form .form-group.quantity,
+#addSaleSection form .form-group.discount,
+#addSaleSection form .form-group.tradeOffer {
+  width: 45%;
+}
+#addSaleSection form .form-group select {
+  margin-top: 50px;
+  padding: 5px 8px;
+}
+
+#addSaleSection form .form-group.address {
+  width: 100%;
+  position: relative;
+}
+#addSaleSection form .form-group.address .addressLength {
+  position: absolute;
+  bottom: 17%;
+  right: 5%;
+}
+#addSaleBtn {
+  position: static;
+  display: block;
+  margin: 0px auto;
+  margin-top: 20px;
+}
+#addSaleBtn:disabled {
+  cursor: not-allowed;
+  transform: scale(1);
+  opacity: 1;
+}

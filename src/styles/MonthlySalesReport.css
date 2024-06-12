@@ -1,0 +1,40 @@
+#monthlyReportSection{
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20vh;
+}
+#monthlyReportSection h2{
+    text-align: center;
+}
+#monthlyReportSection form, #monthlyReportSection form .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#monthlyReportSection form .dateSelectionContainer{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+#monthlyReportSection form select{
+    padding: 5px;
+    cursor: pointer;
+}
+#monthlyReportSection form #getSalesReportBtn{
+    width: 45%;
+    padding: 10px 0;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    display: block;
+    margin: 30px auto;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+#monthlyReportSection form #getSalesReportBtn:hover{
+    opacity: .8;
+}

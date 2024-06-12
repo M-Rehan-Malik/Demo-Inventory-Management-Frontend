@@ -1,0 +1,68 @@
+#carousel{
+    padding: 50px 0px;
+}
+#carousel h2{
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 2rem;
+}
+#carousel .carouselImgDiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#carousel .carouselImgDiv img{
+    width: 50vw;
+    height: 31vw;
+}
+#carousel .carouselImgDiv .btnDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+#carousel .carouselImgDiv .btnDiv:hover{
+    opacity: .8;
+}
+#carousel h3.learnMore{
+    margin-top: 70px;
+    text-align: center;
+}
+#carousel h3.learnMore a{
+    transition: all .3s ease;
+}
+#carousel h3.learnMore a:hover{
+    font-weight: bolder;
+}
+
+
+@media (max-width: 900px) {
+    #carousel .carouselImgDiv img{
+        width: 60vw;
+        height: 40vw;
+    }
+}
+
+@media (max-width: 600px) {
+    #carousel .carouselImgDiv img{
+        width: 70vw;
+        height: 50vw;
+    }
+    #carousel .carouselImgDiv .btnDiv{
+        width: 40px;
+    }
+    #carousel h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 450px){
+    #carousel .carouselImgDiv .btnDiv{
+        width: 35px;
+    }
+}
+

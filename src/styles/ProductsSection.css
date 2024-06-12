@@ -1,0 +1,33 @@
+#productsSection{
+    padding: 50px 0px;
+}
+#productsSection h2{
+    text-align: center;
+    margin-bottom: 50px;
+}
+#productsSection .productsDiv{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+#productsSection .productsDiv .productCard img{
+    width: 400px;
+    height: 250px;
+    border-radius: 10px;
+}
+#productsSection .productsDiv .productCard h3.productTitle{
+    margin-top: 10px;
+    text-align: center;
+}
+
+@media (max-width: 450px){
+    #productsSection h2{
+        font-size: 1.5rem;
+    }
+    #productsSection .productsDiv .productCard img{
+        width: 80vw;
+        height: 50vw;
+    }
+}

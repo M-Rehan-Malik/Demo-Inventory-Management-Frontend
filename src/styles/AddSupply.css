@@ -1,0 +1,68 @@
+#addSupplySection {
+  width: 100%;
+  padding: 6vh 3vw;
+}
+
+#addSupplySection form,
+#addSupplySection .product-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+#addSupplySection .product-group {
+  margin-top: 20px;
+  width: 100%;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+#addSupplySection .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#addSupplySection .form-group input {
+  padding: 15px 20px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+#addSupplySection form .form-group select {
+  margin-top: 50px;
+  padding: 5px 8px;
+}
+
+#addSupplySection form .form-group.description {
+  width: 100%;
+  position: relative;
+}
+#addSupplySection form .form-group.description .descriptionLength {
+  position: absolute;
+  bottom: 17%;
+  right: 5%;
+}
+#addSupplyBtn {
+  position: static;
+  display: block;
+  margin: 0px auto;
+  margin-top: 20px;
+}
+#addSupplyBtn:disabled {
+  cursor: not-allowed;
+  transform: scale(1);
+  opacity: 1;
+}
+
+@media (max-width:600px){
+  .addBtn{
+    margin-top: 20px;
+  }
+}
+
+@media (max-width:450px) {
+  #addSupplySection form .form-group select{
+    margin-top: 20px;
+  }
+}

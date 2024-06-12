@@ -1,0 +1,71 @@
+#saleDetailsSection {
+    width: 100%;
+    padding: 6vh 3vw;
+  }
+  
+  #saleDetailsSection form, #saleDetailsSection .product-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  #saleDetailsSection .product-group{
+      margin-top: 20px;
+      width: 100%;
+      border: 1px solid gray;
+      border-radius: 5px;
+      padding: 10px;
+  }
+  
+  #saleDetailsSection .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  #saleDetailsSection .form-group input {
+    padding: 15px 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+  }
+  
+  #saleDetailsSection .form-group.name, #saleDetailsSection .form-group.address {
+    width: 100%;
+  }
+  #saleDetailsSection .form-group.quantityCtn, #saleDetailsSection .form-group.quantityPcs, #saleDetailsSection .form-group.date, #saleDetailsSection .form-group.totalAmount{
+      width: 45%;
+  }
+
+  #saleDetailsSection .form-group.discount, #saleDetailsSection .form-group.tradeOffer, #saleDetailsSection .form-group.amount{
+    width: 30%;
+  }
+  
+  #saleDetailsSection .btnsDiv {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 30px;
+  }
+  #saleDetailsSection .btnsDiv button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+  }
+  
+  
+@media (max-width:450px) {
+  #saleDetailsSection .form-group.discount, #saleDetailsSection .form-group.tradeOffer, #saleDetailsSection .form-group.amount{
+    width: 45%;
+  }
+  .btnsDiv{
+    flex-direction: column;
+  }
+}
+  

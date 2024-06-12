@@ -1,0 +1,97 @@
+#modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+#modalContainer {
+  background-color: white;
+  width: 800px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  height: 90vh;
+  overflow: auto;
+}
+#closeModalButton {
+  position: fixed;
+  top: 5px;
+  left: 15px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 34px;
+  cursor: pointer;
+}
+
+#modalContainer .product-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  min-width: 100%;
+}
+
+#modalContainer .form-group input {
+  padding: 15px 20px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+#modalContainer .form-group[name="name"],
+#modalContainer .form-group[name="address"],
+#modalContainer .form-group[name="description"]
+  {
+  width: 100%;
+}
+#modalContainer .form-group[name="quantity"],
+#modalContainer .form-group[name="discount"],
+#modalContainer .form-group[name="tradeOffer"] {
+  width: 45%;
+}
+#modalContainer .form-group select[name="quantityInCtn"] {
+  margin-top: 50px;
+  padding: 5px;
+}
+#modalContainer .form-group[name="mrpCtnPrice"],
+#modalContainer .form-group[name="sellingCtnPrice"],
+#modalContainer .form-group[name="piecesInCtn"] {
+  width: 30%;
+}
+
+#modalContainer .btnsDiv {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 30px;
+}
+#modalContainer .btnsDiv button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+}
+
+@media (max-width: 900px) {
+  #modalContainer {
+    width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+  #modalContainer .form-group[name="mrpCtnPrice"],
+  #modalContainer .form-group[name="sellingCtnPrice"],
+  #modalContainer .form-group[name="piecesInCtn"] {
+    width: 45%;
+  }
+}

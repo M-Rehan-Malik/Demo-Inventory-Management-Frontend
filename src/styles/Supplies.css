@@ -1,0 +1,25 @@
+#suppliesSection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#suppliesSection h2 {
+  text-align: center;
+  margin: 20px 0px;
+}
+a #addSupplyBtn{
+  position: fixed;
+  bottom: 30px;
+  right: 40px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+a #addSupplyBtn:hover{
+  opacity: .8;
+  transform: scale(1.02);
+}

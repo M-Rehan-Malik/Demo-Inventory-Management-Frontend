@@ -1,0 +1,77 @@
+#addProductSection {
+  width: 100%;
+  padding: 6vh 3vw;
+}
+
+#addProductSection form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+#addProductSection .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#addProductSection .form-group input {
+  padding: 15px 20px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+#addProductSection .form-group:nth-child(1) {
+  width: 100%;
+  position: relative;
+}
+#addProductSection .form-group:nth-child(2),
+#addProductSection .form-group:nth-child(3),
+#addProductSection .form-group:nth-child(4) {
+  width: 30%;
+}
+
+.length {
+  position: absolute;
+  bottom: 17%;
+  right: 5%;
+}
+
+.addBtn {
+  position: fixed;
+  bottom: 50px;
+  right: 60px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.addBtn:hover {
+  opacity: 0.8;
+  transform: scale(1.02);
+}
+.addBtn:disabled {
+  transform: scale(1);
+  cursor: not-allowed;
+}
+
+@media (max-width: 900px) {
+  .addBtn {
+    position: static;
+    display: block;
+    margin: 20px auto;
+  }
+}
+
+@media (max-width: 600px) {
+  #addProductSection .form-group:nth-child(2),
+  #addProductSection .form-group:nth-child(3),
+  #addProductSection .form-group:nth-child(4) {
+    width: 45%;
+  }
+  .addBtn{
+    margin-top: 100px;
+  }
+}

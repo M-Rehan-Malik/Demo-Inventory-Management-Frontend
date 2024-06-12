@@ -1,0 +1,51 @@
+#productDetailsSection {
+  width: 100%;
+  padding: 6vh 3vw;
+}
+
+#productDetailsSection form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+#productDetailsSection .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#productDetailsSection .form-group input {
+  padding: 15px 20px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+#productDetailsSection .form-group:nth-child(1) {
+  width: 100%;
+}
+#productDetailsSection .form-group:nth-child(2),
+#productDetailsSection .form-group:nth-child(3),
+#productDetailsSection .form-group:nth-child(4) {
+  width: 30%;
+}
+
+#productDetailsSection .btnsDiv {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 30px;
+}
+#productDetailsSection .btnsDiv button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+}
