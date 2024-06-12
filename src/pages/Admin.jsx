@@ -8,7 +8,7 @@ const Admin = () => {
   const navigate = useNavigate();
   useEffect(() => {
     // if (!authToken) navigate("/admin/login")
-    document.title = "Welcome Traders - Admin"
+    document.title = "Company name - Admin"
   }, [])
 
   return (

@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <>
       <nav>
-        <h1 id="title">Welcome Traders</h1>
+        <h1 id="title">Company Name</h1>
         <ul className='navDesktop'>
           <li><NavLink to="/" className={(e) => [e.isActive ? "active" : ""]}>Home</NavLink></li>
           <li><NavLink to="/about" className={(e) => [e.isActive ? "active" : ""]}>About</NavLink></li>

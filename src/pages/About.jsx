@@ -3,7 +3,7 @@ import '../styles/About.css';
 
 const About = () => {
   useEffect(() => {
-    document.title = "Welcome Traders - About"
+    document.title = "Company Name - About"
   }, [])
 
   return (
@@ -16,7 +16,7 @@ const About = () => {
         <br />
         Whether you're a small retail store, an online retailer, or a large corporation, we have the products and solutions to meet your needs. Our dedicated team works tirelessly to source the best products at competitive prices, allowing you to maximize your profits and delight your customers.
         <br />
-        Thank you for choosing <span>Welcome Traders</span>. We look forward to serving you and building a successful partnership together.
+        Thank you for choosing <span>Company name</span>. We look forward to serving you and building a successful partnership together.
       </p>
     </div>
   );
